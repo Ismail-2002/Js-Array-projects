@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>Remove duplicate item</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      let laptop=[" Lenova"," Dell"," Lenova"," HP"," Dell"," Dell"];
+      //set is used to remove duplicate items from an array.
+      //... is used to include all the elements of the Set to a new array.
+      
+      let uniq=[...new Set(laptop)];
+
+      document.write("Before removing Duplicates : "+laptop);
+      document.write("<br>");
+      document.write("<br>");
+      document.write("After removing Duplicates : "+uniq);
+    </script>
+  </body>
+</html>

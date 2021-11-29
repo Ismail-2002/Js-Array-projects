@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>Merge and remove duplicate item</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      let set1=[" one"," two"," three"," four"];
+      let set2=[" five"," three"," six"," four"];
+
+      //set is used to remove duplicate items from an array.
+      //... is used to include all the elements of the Set to a new array.
+      let merge=[...set1,...set2];
+      let uniq=[...new Set(merge)];
+      document.write("Array 1 : "+set1);
+      document.write("<br>");
+      document.write("<br>");
+      document.write("Array 2 : "+set2);
+      document.write("<br>");
+      document.write("<br>");
+      document.write("Merge two arrays : "+merge);
+      document.write("<br>");
+      document.write("<br>");
+      document.write("Remove duplicates : "+uniq);
+    </script>
+  </body>
+</html>

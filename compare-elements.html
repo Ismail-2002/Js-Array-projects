@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Compare Elements of Two Arrays</title>
+    </head>
+    <body>
+      <script>
+        let set1=[10, 30, 50];
+        let set2=[20, 40, 60];
+        let res= JSON.stringify(set1)===JSON.stringify(set2);
+        document.write(`Array 1 : ${set1}`);
+        document.write(`<br> <br>`);
+        document.write(`Array 2 : ${set2}`);
+        document.write(`<br> <br>`);
+
+        if(res){
+          document.write("Both arrays have same elements");
+        }
+        else{
+          document.write("Both arrays have different elements");
+        }
+      </script>
+    </body>
+</html>
